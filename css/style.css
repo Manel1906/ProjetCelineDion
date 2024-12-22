@@ -93,6 +93,114 @@ img {
 
 }
 
+.video {
+    list-style-type: none;
+    /* Supprime les puces de la liste */
+    padding: 0;
+    /* Supprime l'espacement interne par défaut */
+    margin: 0;
+    /* Supprime la marge externe par défaut */
+    display: flex;
+    flex-wrap: wrap;
+    /* Permet aux éléments de passer à la ligne suivante */
+    justify-content: space-between;
+    /* Espacement entre les éléments */
+}
+
+.videoli {
+    flex: 1 1 calc(33.333% - 10px);
+    /* Chaque élément prend un tiers de la largeur moins les marges */
+    margin: 5px;
+    /* Réduit la marge autour de chaque élément */
+    box-sizing: border-box;
+    /* Inclut les marges et les bordures dans la largeur totale */
+}
+
+iframe {
+    width: 100%;
+    /* Assure que chaque iframe prend toute la largeur de son conteneur */
+    height: auto;
+    /* Ajuste la hauteur automatiquement */
+    aspect-ratio: 16 / 9;
+    /* Maintient le ratio d'aspect des vidéos */
+}
+
+.contact-container {
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+    align-content: center;
+}
+
+.contact-container h2 {
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 15px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-field {
+    flex: 1;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.contact-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contact-form button:hover {
+    background-color: gray;
+    color: #000000;
+    font-weight: bold;
+}
+
+.thank-you-message {
+    color: #555555;
+    font-size: 14px;
+}
 footer {
     background-color: black;
     color: #fff;
